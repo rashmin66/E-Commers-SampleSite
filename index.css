@@ -26,6 +26,15 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        .signin-icon{
+          font-size: 20px;
+        }
+        .cart-icon{
+          font-size: 20px;
+        }
+        .text-before-icons{
+          padding-left: 100px;
+        }
 
         /* Styles for the search bar */
         .search-container {
@@ -54,12 +63,15 @@
          .search-container button:hover {
             background: #4b4a4a;
         }
+        .search-button i {
+             margin-right: 5px;
+        }
+
+
         /* Styles for grid */
         .grid-container{
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
-            grid-gap:2px;
-    
         }
         .item{
               padding: 0px;
@@ -67,55 +79,91 @@
         }
         .grid-item-1{
             grid-row:span 2;
+            padding-left: 50px;
         }
-
         .grid-item-4{
             grid-column:span 2;
+        }
+        .grid-item-3{
+            padding-right: 50px;
         }
         .links{
           background-color: #ffffff;
           height: 95%;
           margin: 10px;
           padding: 10px;
+          border-radius: 5px;
         }
         .card{
           margin: 20px;
           border-radius: 30px;
+          width: 90% !important;
         }
+        .carousel{
+          margin: 10px;
+          }
+        .map-icon{
+          font-size: 50px;
+          margin-left: 40%;
+          margin-top: 10%;
+        }
+        .submit-button{
+          background-color: #000000 !important;
+          border: 1px solid #00000088 !important;
+          padding: 5px 25px 5px 25px !important;
+          margin-top: 10px;
+        }
+        .next-button{
+          background-color: #a3a3a350 !important;
+          border: 1px solid #23232388 !important;
+          color:#000000 !important;
+          margin-top: 10px;
+        }
+
+
         /* Styles for slider */
         .carousel-control-prev-icon{
-          color: #000000 !important;
-          /* background-color: #aaa7a7a0 !important;
-          border-radius: 50%; */
+          background-color: #000000a0 !important;
+          border-radius: 50%;
         }
         .carousel-control-next-icon{
-          color: #000000 !important;
-          /* background-color: #363636a0 !important;
-          border-radius: 50%; */
+          background-color: #000000a0 !important;
+          border-radius: 50%;
         }
-       
+        .carousel-control-prev-icon:after {
+          font-weight: 0 !important;
+          font-family: Font Awesome\ 6 Pro,Font Awesome\ 6 Free;
+          font-size: 0rem !important
+        }
+        .carousel-control-next-icon:after {
+          font-weight: 0 !important;
+          font-family: Font Awesome\ 6 Pro,Font Awesome\ 6 Free;
+          font-size: 0rem !important
+        }
+
         
+        /* Styles for footer */
         footer{
             background-color: #000000;
         }
     
- @media screen and (max-width: 450px) {
-  .grid-container {
-    grid-template-columns: 1fr !important;
-    background-color: #4b4a4a;
-  }
-  .grid-item-1 {
-    grid-row: span 1;
-  }
-  .grid-item-4 {
-    grid-column: span 1;
-  }
-  .item {
-    background: #a64545;
-  }
-  footer {
-    background-color: #c5126b;
-  }
+     @media screen and (max-width: 450px) {
+       .grid-container {
+         grid-template-columns: 1fr !important;
+         background-color: #4b4a4a;
+     }
+       .grid-item-1 {
+        grid-row: span 1;
+     }
+       .grid-item-4 {
+        grid-column: span 1;
+     }
+       .item {
+        background: #a64545;
+     }
+        footer {
+        background-color: #c5126b;
+    }
 }
 
 
